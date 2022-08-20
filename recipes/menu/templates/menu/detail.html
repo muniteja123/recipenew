@@ -1,0 +1,10 @@
+
+
+{% if context %}
+Name : {{ context.name }} <br>
+Ingrediants : {{ context.ingrediants }}<br>
+Process : {{ context.process }}<br>
+{% endif %}
+
+<br> <a href="{% url 'menu:index' %}">Back</a>
+

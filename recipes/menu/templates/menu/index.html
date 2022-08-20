@@ -1,0 +1,12 @@
+
+
+MENU<br>
+{% if context %}
+    {% for each in context %}
+<a href="{% url 'menu:detail' each.id %}">{{each.name}}</a><br>
+
+    {% endfor %}
+{% endif %}
+
+
+<a href="{% url 'menu:create' %}">Create</a>
